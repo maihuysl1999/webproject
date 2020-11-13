@@ -101,8 +101,8 @@ export default class RegisterPage extends Component {
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>
                 </p>
-
                 <FBLogin></FBLogin>
+
                 {this.state.errMessage ? (
                     <div className="alert alert-danger" role="alert">
                         {this.state.errMessage}

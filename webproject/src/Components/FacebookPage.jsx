@@ -19,9 +19,9 @@ export default class RegisterPage extends Component {
     responseFacebook = (response) => {
         console.log(response)
         axios({
-            method: "POST",
-            url: "http://localhost:5000/user/facebooklogin",
-            data: { userID: response.userID, accessToken: response.accessToken }
+            method: "GET",
+            url: "http://localhost:5000/auth-fb/facebook",
+            //data: { userID: response.userID, accessToken: response.accessToken }
         }).then(response => {
             console.log("FaceBook login success, client side", response);
         })

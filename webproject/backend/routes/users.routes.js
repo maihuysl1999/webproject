@@ -116,9 +116,4 @@ usersRouter.get('/logout' , (req, res) => {
     });
 })
 
-usersRouter.post('/facebooklogin', (req, res) => {
-    const {userID, accessToken} = req.body;
-    console.log(name);
-})
-
 module.exports =usersRouter;
